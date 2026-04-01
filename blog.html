@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Solace Beauty Journal — Expert guides on skincare, supplements, hormonal health, and clean beauty for the modern woman.">
+  <title>The Journal — Solace Beauty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pages/blog.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Solace <span>Beauty</span></a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="blog.html" class="nav__link active">Journal</a>
+        <a href="shop.html" class="nav__link">Shop</a>
+      </div>
+      <a href="subscribe.html" class="btn btn--primary btn--sm nav__cta">Join the List</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="blog.html">Journal</a>
+    <a href="shop.html">Shop</a>
+    <a href="subscribe.html">Join the List</a>
+  </div>
+  <div class="nav-spacer"></div>
+
+  <!-- Blog Hero / Featured Article -->
+  <section class="blog-hero">
+    <div class="container">
+      <div class="blog-hero__inner reveal">
+        <div class="blog-hero__image placeholder-img--dark" role="img" aria-label="Featured article image"></div>
+        <div class="blog-hero__content">
+          <span class="card__tag">Featured</span>
+          <h1>The Complete Guide to Building a Skincare Routine That Actually Works</h1>
+          <p>Stop wasting money on products that don't deliver. We break down the exact steps, ingredients, and order of application for every skin type — morning and night.</p>
+          <div class="blog-hero__meta">
+            <span>By the Solace Beauty Team</span>
+            <span>&middot;</span>
+            <span>12 min read</span>
+          </div>
+          <a href="#" class="btn btn--primary">Read Article</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Filters -->
+  <section class="blog-filters">
+    <div class="container">
+      <div class="blog-filters__inner">
+        <button class="pill pill--active" data-filter="all">All</button>
+        <button class="pill pill--inactive" data-filter="skincare">Skincare</button>
+        <button class="pill pill--inactive" data-filter="supplements">Supplements</button>
+        <button class="pill pill--inactive" data-filter="hormones">Hormonal Health</button>
+        <button class="pill pill--inactive" data-filter="clean-beauty">Clean Beauty</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Content Area -->
+  <section class="section blog-content">
+    <div class="container">
+      <div class="blog-layout">
+
+        <!-- Article Grid -->
+        <div class="blog-grid" id="blogGrid">
+          <article class="card" data-category="skincare">
+            <div class="card__image placeholder-img" role="img" aria-label="Skincare routine flatlay"></div>
+            <div class="card__body">
+              <span class="card__tag">Skincare</span>
+              <h4 class="card__title">The Only Evening Routine You Actually Need in Your 30s</h4>
+              <p class="card__excerpt">Retinol, peptides, or both? We break down the non-negotiable steps for your nighttime routine that deliver real anti-aging results.</p>
+              <span class="card__meta">5 min read</span>
+            </div>
+          </article>
+
+          <article class="card" data-category="supplements">
+            <div class="card__image placeholder-img" role="img" aria-label="Collagen supplements"></div>
+            <div class="card__body">
+              <span class="card__tag">Supplements</span>
+              <h4 class="card__title">Collagen Supplements: What Actually Works (And What Doesn't)</h4>
+              <p class="card__excerpt">We tested 12 collagen powders over 90 days. Here's what the science — and our skin — revealed about the best formulas.</p>
+              <span class="card__meta">8 min read</span>
+            </div>
+          </article>
+
+          <article class="card" data-category="hormones">
+            <div class="card__image placeholder-img" role="img" aria-label="Woman practicing wellness"></div>
+            <div class="card__body">
+              <span class="card__tag">Hormonal Health</span>
+              <h4 class="card__title">Why Your Skin Breaks Out Before Your Period (And How to Stop It)</h4>
+              <p class="card__excerpt">The hormone-skin connection explained, plus the exact products and supplements that help balance both naturally.</p>
+              <span class="card__meta">6 min read</span>
+            </div>
+          </article>
+
+          <article class="card" data-category="clean-beauty">
+            <div class="card__image placeholder-img" role="img" aria-label="Clean beauty products"></div>
+            <div class="card__body">
+              <span class="card__tag">Clean Beauty</span>
+              <h4 class="card__title">10 Toxic Ingredients Hiding in Your "Natural" Products</h4>
+              <p class="card__excerpt">That "clean" label might be lying to you. Here are the ingredients to watch out for and what to use instead.</p>
+              <span class="card__meta">7 min read</span>
+            </div>
+          </article>
+
+          <article class="card" data-category="skincare">
+            <div class="card__image placeholder-img" role="img" aria-label="Vitamin C serum"></div>
+            <div class="card__body">
+              <span class="card__tag">Skincare</span>
+              <h4 class="card__title">Vitamin C Serums Ranked: Our Honest Top 5 for 2026</h4>
+              <p class="card__excerpt">From budget-friendly to luxury splurge, we tested every major Vitamin C serum so you don't have to. These are our honest picks.</p>
+              <span class="card__meta">10 min read</span>
+            </div>
+          </article>
+
+          <article class="card" data-category="supplements">
+            <div class="card__image placeholder-img" role="img" aria-label="Adaptogen herbs"></div>
+            <div class="card__body">
+              <span class="card__tag">Supplements</span>
+              <h4 class="card__title">Adaptogens Explained: Which Ones Are Worth Your Money</h4>
+              <p class="card__excerpt">Ashwagandha, reishi, rhodiola — the adaptogen market is booming. We separate the proven from the overhyped.</p>
+              <span class="card__meta">9 min read</span>
+            </div>
+          </article>
+
+          <article class="card" data-category="hormones">
+            <div class="card__image placeholder-img" role="img" aria-label="Seed cycling ingredients"></div>
+            <div class="card__body">
+              <span class="card__tag">Hormonal Health</span>
+              <h4 class="card__title">Seed Cycling: Does It Actually Balance Your Hormones?</h4>
+              <p class="card__excerpt">The wellness world swears by it, but what does the research say? We dug into the science behind seed cycling.</p>
+              <span class="card__meta">7 min read</span>
+            </div>
+          </article>
+
+          <article class="card" data-category="clean-beauty">
+            <div class="card__image placeholder-img" role="img" aria-label="Eco-friendly packaging"></div>
+            <div class="card__body">
+              <span class="card__tag">Clean Beauty</span>
+              <h4 class="card__title">The Best Reef-Safe Sunscreens That Don't Leave a White Cast</h4>
+              <p class="card__excerpt">Sun protection without the ocean damage or the ghostly finish. These formulas get both right — finally.</p>
+              <span class="card__meta">6 min read</span>
+            </div>
+          </article>
+
+          <article class="card" data-category="skincare">
+            <div class="card__image placeholder-img" role="img" aria-label="Retinol products"></div>
+            <div class="card__body">
+              <span class="card__tag">Skincare</span>
+              <h4 class="card__title">How to Start Retinol Without Destroying Your Skin Barrier</h4>
+              <p class="card__excerpt">The sandwich method, buffering, and the exact timeline for introducing retinol — even if you have sensitive skin.</p>
+              <span class="card__meta">8 min read</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+          <!-- Email Opt-in -->
+          <div class="sidebar-card sidebar-optin reveal">
+            <h4>Get the Weekly Edit</h4>
+            <div class="gold-line" style="margin-left:0;"></div>
+            <p>Expert beauty intel, new product alerts, and skincare tips — every Tuesday.</p>
+            <form onsubmit="return false;">
+              <label for="email-sidebar" class="sr-only">Email address</label>
+              <input type="email" id="email-sidebar" class="form-input" placeholder="Your email" required>
+              <button type="submit" class="btn btn--primary" style="width:100%; margin-top:0.5rem;">Subscribe</button>
+            </form>
+          </div>
+
+          <!-- Popular Posts -->
+          <div class="sidebar-card reveal">
+            <h4>Most Popular</h4>
+            <div class="gold-line" style="margin-left:0;"></div>
+            <ul class="sidebar-popular">
+              <li>
+                <a href="#">
+                  <span class="sidebar-popular__num">01</span>
+                  <span>The Complete Guide to Double Cleansing</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="sidebar-popular__num">02</span>
+                  <span>Best Supplements for Hair Growth in 2026</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="sidebar-popular__num">03</span>
+                  <span>How to Read Skincare Labels Like a Pro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="sidebar-popular__num">04</span>
+                  <span>The Truth About Hyaluronic Acid Serums</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="sidebar-popular__num">05</span>
+                  <span>Your Hormones and Your Skin: The Full Picture</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Categories -->
+          <div class="sidebar-card reveal">
+            <h4>Categories</h4>
+            <div class="gold-line" style="margin-left:0;"></div>
+            <ul class="sidebar-categories">
+              <li><a href="#">Skincare &amp; Anti-Aging <span>24</span></a></li>
+              <li><a href="#">Supplements <span>18</span></a></li>
+              <li><a href="#">Hormonal Health <span>12</span></a></li>
+              <li><a href="#">Clean Beauty <span>15</span></a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">Solace <span>Beauty</span></p>
+          <p class="footer__desc">Luxury skincare guidance and clean wellness essentials for women who refuse to settle for anything less than extraordinary.</p>
+        </div>
+        <div>
+          <p class="footer__heading">Explore</p>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="blog.html" class="footer__link">Journal</a>
+          <a href="shop.html" class="footer__link">Shop</a>
+          <a href="subscribe.html" class="footer__link">Subscribe</a>
+        </div>
+        <div>
+          <p class="footer__heading">Categories</p>
+          <a href="shop.html" class="footer__link">Skincare</a>
+          <a href="shop.html" class="footer__link">Supplements</a>
+          <a href="shop.html" class="footer__link">Hormonal Health</a>
+          <a href="shop.html" class="footer__link">Clean Beauty</a>
+        </div>
+        <div>
+          <p class="footer__heading">Stay in the Loop</p>
+          <p class="footer__desc" style="margin-bottom: 1rem;">Weekly beauty intel delivered to your inbox.</p>
+          <form class="form-inline" onsubmit="return false;" style="max-width:320px;">
+            <label for="email-footer-blog" class="sr-only">Email address</label>
+            <input type="email" id="email-footer-blog" class="form-input" placeholder="Your email" required style="font-size:0.85rem; padding:0.7rem 1rem;">
+            <button type="submit" class="btn btn--primary btn--sm">Go</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Solace Beauty. All rights reserved.</p>
+        <div>
+          <a href="#" class="footer__link" style="display:inline; margin-right:1rem;">Privacy</a>
+          <a href="#" class="footer__link" style="display:inline;">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+  <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}</style>
+  <script src="js/main.js"></script>
+</body>
+</html>

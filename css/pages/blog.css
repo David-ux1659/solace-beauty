@@ -1,0 +1,204 @@
+/* ==========================================================================
+   BLOG / JOURNAL PAGE — Solace Beauty
+   ========================================================================== */
+
+/* ---------- Blog Hero (Featured Article) ---------- */
+.blog-hero {
+  padding: var(--space-2xl) 0 var(--space-3xl);
+}
+
+.blog-hero__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+  background: var(--color-white);
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+@media (min-width: 768px) {
+  .blog-hero__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+}
+
+.blog-hero__image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  min-height: 280px;
+}
+
+@media (min-width: 768px) {
+  .blog-hero__image {
+    aspect-ratio: auto;
+    height: 100%;
+    min-height: 420px;
+  }
+}
+
+.blog-hero__content {
+  padding: var(--space-2xl);
+}
+
+@media (min-width: 768px) {
+  .blog-hero__content {
+    padding: var(--space-3xl);
+  }
+}
+
+.blog-hero__content h1 {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-md);
+  line-height: 1.2;
+}
+
+.blog-hero__content p {
+  color: var(--color-text-light);
+  font-size: var(--text-base);
+  line-height: 1.7;
+  margin-bottom: var(--space-lg);
+}
+
+.blog-hero__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xl);
+}
+
+/* ---------- Blog Filters ---------- */
+.blog-filters {
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.blog-filters__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+/* ---------- Blog Layout (Grid + Sidebar) ---------- */
+.blog-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3xl);
+}
+
+@media (min-width: 1024px) {
+  .blog-layout {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* ---------- Blog Grid ---------- */
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 640px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- Sidebar ---------- */
+.blog-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 1024px) {
+  .blog-sidebar {
+    position: sticky;
+    top: calc(var(--nav-height) + var(--space-xl));
+    align-self: start;
+  }
+}
+
+.sidebar-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-xl);
+  border: 1px solid var(--color-border-light);
+}
+
+.sidebar-card h4 {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-xs);
+}
+
+.sidebar-optin p {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-md);
+}
+
+/* Popular Posts */
+.sidebar-popular {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.sidebar-popular li a {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  color: var(--color-text);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  transition: color var(--transition-fast);
+}
+
+.sidebar-popular li a:hover {
+  color: var(--color-mauve);
+}
+
+.sidebar-popular__num {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--color-rose-gold-light);
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 28px;
+}
+
+/* Categories */
+.sidebar-categories {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.sidebar-categories li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-text);
+  font-size: var(--text-sm);
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--color-border-light);
+  transition: color var(--transition-fast);
+}
+
+.sidebar-categories li a:hover {
+  color: var(--color-mauve);
+}
+
+.sidebar-categories li a span {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  background: var(--color-blush-light);
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+}
