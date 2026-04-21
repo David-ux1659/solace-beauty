@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop Solace Beauty's curated collection of luxury skincare, clean supplements, and wellness essentials — handpicked by our editorial team.">
+  <title>Shop — Solace Beauty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pages/shop.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Solace <span>Beauty</span></a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="blog.html" class="nav__link">Journal</a>
+        <a href="shop.html" class="nav__link active">Shop</a>
+      </div>
+      <a href="subscribe.html" class="btn btn--primary btn--sm nav__cta">Join the List</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="blog.html">Journal</a>
+    <a href="shop.html">Shop</a>
+    <a href="subscribe.html">Join the List</a>
+  </div>
+  <div class="nav-spacer"></div>
+
+  <!-- Shop Header -->
+  <section class="shop-header">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="text-uppercase">The Solace Edit</p>
+        <h1>Curated for Women<br><em class="text-accent">Who Know Better</em></h1>
+        <div class="gold-line"></div>
+        <p>Every product is tested, reviewed, and approved by our editorial team. We only recommend what we'd use ourselves.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Filters -->
+  <section class="shop-filters">
+    <div class="container">
+      <div class="shop-filters__inner">
+        <button class="pill pill--active" data-filter="all">All Products</button>
+        <button class="pill pill--inactive" data-filter="skincare">Skincare</button>
+        <button class="pill pill--inactive" data-filter="supplements">Supplements</button>
+        <button class="pill pill--inactive" data-filter="hormones">Hormonal Health</button>
+        <button class="pill pill--inactive" data-filter="clean-beauty">Clean Beauty</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="section shop-products">
+    <div class="container">
+      <div class="grid grid--4" id="productGrid">
+
+        <!-- Skincare Products -->
+        <div class="product-card reveal" data-category="skincare">
+          <span class="product-card__badge">Editor's Pick</span>
+          <div class="product-card__image placeholder-img" role="img" aria-label="Retinol serum bottle"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Skincare</span>
+            <h4 class="product-card__title">Advanced Retinol Renewal Serum</h4>
+            <p class="product-card__desc">Encapsulated retinol with bakuchiol for visible results without irritation. Your nightstand essential.</p>
+            <p class="product-card__price">$68</p>
+            <a href="#" class="btn btn--primary btn--sm" style="width:100%;">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal--delay-1" data-category="skincare">
+          <div class="product-card__image placeholder-img" role="img" aria-label="Vitamin C serum"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Skincare</span>
+            <h4 class="product-card__title">Brightening Vitamin C + E Serum</h4>
+            <p class="product-card__desc">20% L-ascorbic acid with vitamin E and ferulic acid for maximum brightening and antioxidant protection.</p>
+            <p class="product-card__price">$54</p>
+            <a href="#" class="btn btn--primary btn--sm" style="width:100%;">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal--delay-2" data-category="skincare">
+          <div class="product-card__image placeholder-img" role="img" aria-label="Peptide moisturizer"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Skincare</span>
+            <h4 class="product-card__title">Peptide Recovery Moisturizer</h4>
+            <p class="product-card__desc">Multi-peptide complex meets squalane in this barrier-restoring night cream. Wake up plump.</p>
+            <p class="product-card__price">$72</p>
+            <a href="#" class="btn btn--primary btn--sm" style="width:100%;">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal--delay-3" data-category="skincare">
+          <span class="product-card__badge">Editor's Pick</span>
+          <div class="product-card__image placeholder-img" role="img" aria-label="SPF moisturizer"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Skincare</span>
+            <h4 class="product-card__title">Mineral SPF 50 Daily Shield</h4>
+            <p class="product-card__desc">Reef-safe, zero white cast, wears beautifully under makeup. The only sunscreen you'll actually want to use.</p>
+            <p class="product-card__price">$42</p>
+            <a href="#" class="btn btn--primary btn--sm" style="width:100%;">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Supplement Products -->
+        <div class="product-card reveal" data-category="supplements">
+          <span class="product-card__badge">Editor's Pick</span>
+          <div class="product-card__image placeholder-img" role="img" aria-label="Collagen powder"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Supplements</span>
+            <h4 class="product-card__title">Marine Collagen Peptides</h4>
+            <p class="product-card__desc">Wild-caught, hydrolyzed marine collagen for skin elasticity, hair strength, and joint support. Unflavored.</p>
+            <p class="product-card__price">$45</p>
+            <a href="#" class="btn btn--primary btn--sm" style="width:100%;">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal--delay-1" data-category="supplements">
+          <div class="product-card__image placeholder-img" role="img" aria-label="Hair growth vitamins"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Supplements</span>
+            <h4 class="product-card__title">Hair Growth Complex</h4>
+            <p class="product-card__desc">Biotin, saw palmetto, and zinc in one daily capsule. Clinically shown to reduce shedding in 90 days.</p>
+            <p class="product-card__price">$38</p>
+            <a href="#" class="btn btn--primary btn--sm" style="width:100%;">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal--delay-2" data-category="supplements">
+          <div class="product-card__image placeholder-img" role="img" aria-label="Gut health supplement"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Supplements</span>
+            <h4 class="product-card__title">Probiotic Glow Complex</h4>
+            <p class="product-card__desc">50 billion CFU with prebiotic fiber. The gut-skin axis is real — this formula proves it.</p>
+            <p class="product-card__price">$36</p>
+            <a href="#" class="btn btn--primary btn--sm" style="width:100%;">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Hormonal Health Products -->
+        <div class="product-card reveal reveal--delay-3" data-category="hormones">
+          <span class="product-card__badge">Editor's Pick</span>
+          <div class="product-card__image placeholder-img" role="img" aria-label="Hormone balance supplement"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Hormonal Health</span>
+            <h4 class="product-card__title">Cycle Balance Formula</h4>
+            <p class="product-card__desc">Vitex, DIM, and magnesium glycinate to support hormonal balance throughout your entire cycle.</p>
+            <p class="product-card__price">$44</p>
+            <a href="#" class="btn btn--primary btn--sm" style="width:100%;">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-category="hormones">
+          <div class="product-card__image placeholder-img" role="img" aria-label="Ashwagandha supplement"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Hormonal Health</span>
+            <h4 class="product-card__title">Ashwagandha Stress Relief</h4>
+            <p class="product-card__desc">KSM-66 ashwagandha root extract. Clinically proven to lower cortisol and support calm, focused energy.</p>
+            <p class="product-card__price">$32</p>
+            <a href="#" class="btn btn--primary btn--sm" style="width:100%;">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal--delay-1" data-category="hormones">
+          <div class="product-card__image placeholder-img" role="img" aria-label="Magnesium supplement"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Hormonal Health</span>
+            <h4 class="product-card__title">Magnesium Sleep + Calm</h4>
+            <p class="product-card__desc">Magnesium glycinate and L-theanine for deep, restorative sleep. Because recovery is beauty's secret weapon.</p>
+            <p class="product-card__price">$28</p>
+            <a href="#" class="btn btn--primary btn--sm" style="width:100%;">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Clean Beauty Products -->
+        <div class="product-card reveal reveal--delay-2" data-category="clean-beauty">
+          <span class="product-card__badge">Editor's Pick</span>
+          <div class="product-card__image placeholder-img" role="img" aria-label="Clean beauty oil"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Clean Beauty</span>
+            <h4 class="product-card__title">Botanical Face Oil Elixir</h4>
+            <p class="product-card__desc">Rosehip, jojoba, and sea buckthorn in a luxurious cold-pressed blend. 100% organic, zero fillers.</p>
+            <p class="product-card__price">$58</p>
+            <a href="#" class="btn btn--primary btn--sm" style="width:100%;">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal--delay-3" data-category="clean-beauty">
+          <div class="product-card__image placeholder-img" role="img" aria-label="Clean lip treatment"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Clean Beauty</span>
+            <h4 class="product-card__title">Tinted Lip Treatment</h4>
+            <p class="product-card__desc">Sheer color meets deep hydration. Packed with lanolin, vitamin E, and raspberry seed oil. Four shades.</p>
+            <p class="product-card__price">$24</p>
+            <a href="#" class="btn btn--primary btn--sm" style="width:100%;">Shop Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop CTA Banner -->
+  <section class="shop-cta">
+    <div class="container container--narrow">
+      <div class="shop-cta__inner reveal">
+        <h2>Can't Decide?<br><em class="text-accent">We'll Help.</em></h2>
+        <p>Take our 2-minute skin quiz and get personalized product recommendations curated just for you.</p>
+        <a href="subscribe.html" class="btn btn--primary btn--lg">Take the Quiz</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">Solace <span>Beauty</span></p>
+          <p class="footer__desc">Luxury skincare guidance and clean wellness essentials for women who refuse to settle for anything less than extraordinary.</p>
+        </div>
+        <div>
+          <p class="footer__heading">Explore</p>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="blog.html" class="footer__link">Journal</a>
+          <a href="shop.html" class="footer__link">Shop</a>
+          <a href="subscribe.html" class="footer__link">Subscribe</a>
+        </div>
+        <div>
+          <p class="footer__heading">Categories</p>
+          <a href="shop.html" class="footer__link">Skincare</a>
+          <a href="shop.html" class="footer__link">Supplements</a>
+          <a href="shop.html" class="footer__link">Hormonal Health</a>
+          <a href="shop.html" class="footer__link">Clean Beauty</a>
+        </div>
+        <div>
+          <p class="footer__heading">Stay in the Loop</p>
+          <p class="footer__desc" style="margin-bottom: 1rem;">Weekly beauty intel delivered to your inbox.</p>
+          <form class="form-inline" onsubmit="return false;" style="max-width:320px;">
+            <label for="email-footer-shop" class="sr-only">Email address</label>
+            <input type="email" id="email-footer-shop" class="form-input" placeholder="Your email" required style="font-size:0.85rem; padding:0.7rem 1rem;">
+            <button type="submit" class="btn btn--primary btn--sm">Go</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Solace Beauty. All rights reserved.</p>
+        <div>
+          <a href="#" class="footer__link" style="display:inline; margin-right:1rem;">Privacy</a>
+          <a href="#" class="footer__link" style="display:inline;">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+  <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}</style>
+  <script src="js/main.js"></script>
+</body>
+</html>

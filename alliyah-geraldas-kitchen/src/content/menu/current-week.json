@@ -1,0 +1,102 @@
+{
+  "weekLabel": "This Weekend's Menu",
+  "dateRange": "April 5–6, 2026",
+  "note": "Menu is limited for this weekend only",
+  "combos": [
+    {
+      "id": "lasagna-combo",
+      "name": "Lasagna Combo",
+      "creoleName": "Lazany Combo",
+      "price": 22,
+      "description": "Haitian Lasagna + sides + drink",
+      "includes": "Lasagna + sides + drink",
+      "image": "/images/food/haitian-lasagna.jpg",
+      "badge": null,
+      "soldOut": false
+    },
+    {
+      "id": "oxtail-combo",
+      "name": "Oxtail Combo",
+      "creoleName": "Ke Bèf Combo",
+      "price": 30,
+      "description": "Signature slow-cooked oxtail with your choice of side and a drink",
+      "includes": "Oxtail + side + drink",
+      "image": "/images/food/haitian-oxtail.jpg",
+      "badge": "MOST POPULAR",
+      "soldOut": false
+    }
+  ],
+  "mains": [
+    {
+      "id": "signature-oxtail",
+      "name": "Signature Oxtail",
+      "creoleName": "Ke Bèf",
+      "price": 24.99,
+      "description": "Slow-braised oxtail in rich Creole sauce, served with Diri Sos Pwa (rice & beans)",
+      "image": "/images/food/haitian-oxtail.jpg",
+      "badge": null,
+      "soldOut": false
+    },
+    {
+      "id": "haitian-lasagna",
+      "name": "Haitian Lasagna",
+      "creoleName": "Lazany Ayisyen",
+      "price": 18,
+      "description": "Layers of seasoned meat, cheese, and Haitian spices baked to perfection with Rice & Beans",
+      "image": "/images/food/haitian-lasagna.jpg",
+      "badge": null,
+      "soldOut": false
+    },
+    {
+      "id": "haitian-oxtail",
+      "name": "Haitian Oxtail",
+      "creoleName": "Ke Bèf",
+      "price": 24.99,
+      "description": "Tender oxtail braised in Haitian spices, with Rice & Beans",
+      "image": "/images/food/haitian-oxtail.jpg",
+      "badge": null,
+      "soldOut": false
+    }
+  ],
+  "sides": [
+    {
+      "id": "fried-plantain",
+      "name": "Fried Plantain",
+      "creoleName": "Bannann Peze",
+      "price": 6,
+      "description": "Crispy twice-fried sweet plantains",
+      "image": "/images/food/fried-plantain.jpg",
+      "badge": null,
+      "soldOut": false
+    },
+    {
+      "id": "pikliz",
+      "name": "Pikliz",
+      "creoleName": "Pikliz",
+      "price": 0,
+      "description": "Spicy pickled cabbage and vegetable relish — the essential Haitian condiment",
+      "image": "/images/food/pikliz.jpg",
+      "badge": "FREE WITH ORDER",
+      "soldOut": false
+    }
+  ],
+  "drinks": [
+    { "id": "coca-cola", "name": "Coca-Cola", "price": 2, "soldOut": false },
+    { "id": "sprite", "name": "Sprite", "price": 2, "soldOut": false },
+    { "id": "water", "name": "Water", "price": 2, "soldOut": false }
+  ],
+  "specials": [
+    {
+      "id": "soup-joumou",
+      "name": "Soup Joumou",
+      "creoleName": "Soup Joumou",
+      "price": 15,
+      "description": "Haiti's iconic freedom soup — rich squash-based broth with beef, vegetables, and pasta. A UNESCO-recognized cultural treasure.",
+      "image": "/images/food/soup-joumou.jpg",
+      "badge": "SUNDAY EXCLUSIVE",
+      "sundayOnly": true,
+      "soldOut": false,
+      "culturalNote": "Soup Joumou celebrates Haitian independence. Once forbidden to the enslaved, it became the first meal of freedom on January 1, 1804."
+    }
+  ]
+}

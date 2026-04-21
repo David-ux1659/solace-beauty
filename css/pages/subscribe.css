@@ -1,0 +1,229 @@
+/* ==========================================================================
+   SUBSCRIBE / LEAD CAPTURE PAGE — Solace Beauty
+   ========================================================================== */
+
+/* ---------- Page Layout ---------- */
+.subscribe-page {
+  background: var(--color-ivory);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------- Minimal Nav ---------- */
+.subscribe-nav {
+  padding: var(--space-lg) var(--space-xl);
+  text-align: center;
+}
+
+/* ---------- Main Content ---------- */
+.subscribe-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+}
+
+.subscribe-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1100px;
+  width: 100%;
+  background: var(--color-white);
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+@media (min-width: 768px) {
+  .subscribe-container {
+    grid-template-columns: 1fr 1.3fr;
+  }
+}
+
+/* ---------- Visual Side ---------- */
+.subscribe-visual {
+  position: relative;
+  min-height: 250px;
+  overflow: hidden;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .subscribe-visual {
+    display: block;
+    min-height: 100%;
+  }
+}
+
+.subscribe-visual__bg {
+  position: absolute;
+  inset: 0;
+}
+
+.subscribe-visual__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-2xl);
+  background: linear-gradient(to top, rgba(61, 43, 51, 0.8), transparent);
+  color: var(--color-white);
+}
+
+.subscribe-visual__stat {
+  font-family: var(--font-heading);
+  font-size: var(--text-4xl);
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: var(--space-xs);
+}
+
+.subscribe-visual__label {
+  font-size: var(--text-sm);
+  color: var(--color-rose-gold-light);
+  margin-bottom: 0;
+}
+
+/* ---------- Form Side ---------- */
+.subscribe-form-area {
+  padding: var(--space-2xl);
+}
+
+@media (min-width: 768px) {
+  .subscribe-form-area {
+    padding: var(--space-3xl) var(--space-3xl);
+    display: flex;
+    align-items: center;
+  }
+}
+
+.subscribe-form__eyebrow {
+  color: var(--color-rose-gold-metallic);
+  margin-bottom: var(--space-lg);
+}
+
+.subscribe-form-area h1 {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-xs);
+  line-height: 1.15;
+}
+
+.subscribe-form__desc {
+  font-size: var(--text-base);
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-bottom: var(--space-xl);
+}
+
+/* ---------- Benefits List ---------- */
+.subscribe-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+}
+
+.subscribe-benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.subscribe-benefits svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  stroke: var(--color-rose-gold-metallic);
+  margin-top: 1px;
+}
+
+/* ---------- Form ---------- */
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.form-input--lg {
+  padding: 1rem 1.5rem;
+  font-size: var(--text-base);
+  min-height: 56px;
+}
+
+.subscribe-form__btn {
+  width: 100%;
+}
+
+.subscribe-form__note {
+  font-size: var(--text-xs);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+/* ---------- Social Proof ---------- */
+.subscribe-proof {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.subscribe-proof__avatars {
+  display: flex;
+}
+
+.subscribe-proof__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--color-white);
+  margin-right: -10px;
+  flex-shrink: 0;
+}
+
+.subscribe-proof__avatar:last-child {
+  margin-right: 0;
+}
+
+.subscribe-proof__text {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+.subscribe-proof__text strong {
+  color: var(--color-text);
+}
+
+/* ---------- Minimal Footer ---------- */
+.subscribe-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  padding: var(--space-xl);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  flex-wrap: wrap;
+}
+
+.subscribe-footer a {
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+}
+
+.subscribe-footer a:hover {
+  color: var(--color-mauve);
+}
+
+.subscribe-footer p {
+  margin-bottom: 0;
+}
